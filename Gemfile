@@ -48,3 +48,5 @@ group :test do
   gem 'capybara'
   gem 'rspec-collection_matchers'
 end
+
+gem 'devise'
