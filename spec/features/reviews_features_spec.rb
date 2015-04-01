@@ -19,7 +19,7 @@ feature 'reviewing' do
     click_link 'Review KFC'
     fill_in "Thoughts", with: thoughts
     select rating, from: "Rating"
-    click_button 'Leave Review'
+    click_button 'Leave a review'
   end
 
   scenario "displays an average rating for all reviews" do
