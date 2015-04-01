@@ -1,10 +1,11 @@
 require 'rails_helper'
 
 context "user not signed in and on the homepage" do
-  it "should see a 'sign in' link and a 'sign up' link" do
+  it "should see a 'sign in' link, a 'sing in with Facebook' and 'sign up' link" do
     visit('/')
     expect(page).to have_link('Sign in')
     expect(page).to have_link('Sign up')
+    expect(page).to have_link('Sign in with Facebook')
   end
 
   it "should not see 'sign out' link" do
