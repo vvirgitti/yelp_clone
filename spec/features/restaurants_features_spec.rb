@@ -32,6 +32,8 @@ feature 'restaurants' do
       fill_in('Password confirmation', with: 'testtest')
       click_button('Sign up')
 
+      # expect(helper.sign_up)
+
       visit '/restaurants'
       click_link 'Add a restaurant'
       fill_in 'Name', with: 'KFC'
